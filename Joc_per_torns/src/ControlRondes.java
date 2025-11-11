@@ -26,6 +26,7 @@ public class ControlRondes{
         return nomTorn;
     }
 
+
     public static void comptadorRondes (int rondaLimit, int ronda){
         if(ronda < rondaLimit){
             System.out.println("Ronda: " + (ronda + 1));
