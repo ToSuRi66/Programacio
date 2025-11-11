@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Activities.iml" filepath="$PROJECT_DIR$/Activities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Labs/Labs.iml" filepath="$PROJECT_DIR$/Labs/Labs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Labs/examples/les14/dukeschoice/dukeschoice.iml" filepath="$PROJECT_DIR$/Labs/examples/les14/dukeschoice/dukeschoice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Labs/examples/examples.iml" filepath="$PROJECT_DIR$/Labs/examples/examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/les05/les05.iml" filepath="$PROJECT_DIR$/les05/les05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/les06/les06.iml" filepath="$PROJECT_DIR$/les06/les06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/les07/les07.iml" filepath="$PROJECT_DIR$/les07/les07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Labs/examples/les14/soccer/soccer.iml" filepath="$PROJECT_DIR$/Labs/examples/les14/soccer/soccer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Labs/soln/soln.iml" filepath="$PROJECT_DIR$/Labs/soln/soln.iml" />
+    </modules>
+  </component>
+</project>
