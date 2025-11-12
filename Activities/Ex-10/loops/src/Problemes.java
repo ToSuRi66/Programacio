@@ -97,8 +97,46 @@ public class Problemes {
                 System.out.printf("\nEl numero tiene %d cifras",numCifras);
                 break;
             case 7:
-                int nb = input.nextByte();
-                System.out.println(nb);
+                System.out.println("Numero de tipo byte: ");
+                byte nb = input.nextByte();
+                int count = 0;
+                double numdb;
+                double suma7 = 0.0;
+                do{
+                    numdb = input.nextDouble();
+                    suma7 = suma7+numdb;
+                    count++;
+                } while(numdb == 0.0 || count != nb);
+                double resultat7 = suma7 / (double)count;
+                System.out.printf("Se han leído %d números, y la media es %.2f",count,resultat7);
+                break;
+            case 8:
+                System.out.println("Mirar codigo");
+                /*
+                while (i<n){
+                j=Integer.parseInt(leer.readLine())
+                if(j==-1) i=n;
+                i++
+                }
+                */
+                break;
+            case 9:
+                int m9 = 0, d9;
+                while (m9 <=3){
+                    m9++;
+                    d9 =1;
+                    while(d9 <=5){
+                        if (m9 ==2 && d9 >=4) {
+                            d9++;
+                        } else {
+                            System.out.println(m9 +" "+ d9);
+                            d9++;
+                        }
+                    }
+                }
+                break;
+            case 10:
+                
                 break;
             default:
                 System.out.println("Invalid number dumbass!!!");
