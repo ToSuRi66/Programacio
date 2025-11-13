@@ -14,10 +14,10 @@ public class Random {
                     System.out.print("Nom: ");
                     bidi[i][k]=input.nextLine();
                 } else if (k%3 == 1){
-                    System.out.printf("Llinatge: ");
+                    System.out.print("Llinatge: ");
                     bidi[i][k]=input.nextLine();
-                } else if (k%3 == 2){
-                    System.out.printf("Edad: ");
+                } else {
+                    System.out.print("Edad: ");
                     bidi[i][k]=input.nextLine();
                 }
             }
