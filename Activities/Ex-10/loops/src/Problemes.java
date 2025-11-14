@@ -136,7 +136,7 @@ public class Problemes {
                 }
                 break;
             case 10:
-                
+
                 break;
             default:
                 System.out.println("Invalid number dumbass!!!");
