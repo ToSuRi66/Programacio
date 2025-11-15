@@ -136,7 +136,77 @@ public class Problemes {
                 }
                 break;
             case 10:
-                
+                System.out.print("Numero entero: ");
+                int num10Og = input.nextInt();
+                int num10 = Math.abs(num10Og);
+                int countAnillos = 0;
+                if (num10 == 0){
+                    countAnillos++;
+                    break;
+                }
+                while(num10 > 0){
+                    int num10Ud = num10%10;
+                    switch(num10Ud){
+                        case 0,6,9:
+                            countAnillos++;
+                            break;
+                        case 8:
+                            countAnillos = countAnillos + 2;
+                            break;
+                    }
+                    num10 = num10 / 10;
+                }
+                System.out.printf("El numero %d contiene %d anillos.",num10Og,countAnillos);
+                break;
+            case 11:
+                System.out.println("Mirar codigo");
+                /*
+                int j = 0;
+                int i = 0;
+                do{
+                    i = metodo1();
+                    if(i==-1) j=n-1;
+                    j+=i;
+                }while(j<n);
+                */
+                break;
+            case 12:
+                double valorConc = 0.0;
+                final double KA = 0.0;
+                double pKA = Math.log10(KA)*-1;
+
+                break;
+            case 13:
+                System.out.println("Codigo rehecho");
+                int index = 1;
+                do{
+                    System.out.println(index++);
+                } while (index < 10);
+                break;
+            case 14:
+                System.out.print("Numero para el productorio: ");
+                int num14 = input.nextInt();
+                int resultat14 = 1;
+                for (int i = 1; i <= num14; i++) {
+                    resultat14 = i * resultat14;
+                }
+                System.out.printf("El productorio de %d es: %d",num14,resultat14);
+                break;
+            case 15:
+                break;
+            case 16:
+                break;
+            case 17:
+                break;
+            case 18:
+                break;
+            case 19:
+                break;
+            case 20:
+                break;
+            case 21:
+                break;
+            case 22:
                 break;
             default:
                 System.out.println("Invalid number dumbass!!!");
