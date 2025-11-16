@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.lang.Math;
 
 public class Problemes {
     public static void main(String[]args){
@@ -193,20 +194,116 @@ public class Problemes {
                 System.out.printf("El productorio de %d es: %d",num14,resultat14);
                 break;
             case 15:
+                int dia = 0,mes = 0,ano = 0,sumaDias = 0,diasRestan = 0;
+                boolean bisiesto = false;
+                System.out.print("Dia: ");dia = input.nextInt();
+                System.out.print("Mes: ");mes = input.nextInt();
+                System.out.print("Año: ");ano = input.nextInt();
+                if(dia <= 0 || mes <= 0 ||ano <= 0){
+                    break;
+                }
+                if (ano%4 == 0) bisiesto = true;
+                for (int i = 1; i < mes; i++) {
+                    switch(i){
+                        case 4,6,9,11:
+                            sumaDias = sumaDias + 30;
+                            break;
+                        case 1,3,5,7,8,10,12:
+                            sumaDias = sumaDias + 31;
+                            break;
+                        case 2:
+                            if (bisiesto){
+                                sumaDias = sumaDias + 29;
+                            } else {
+                                sumaDias = sumaDias + 28;
+                            }
+                            break;
+                    }
+                }
+                sumaDias = sumaDias + dia;
+                if (bisiesto){
+                    diasRestan = 366 - sumaDias;
+                } else {
+                    diasRestan = 365 - sumaDias;
+                }
+                System.out.printf("Quedan para final de año: %d",diasRestan);
                 break;
             case 16:
+                int numLimit = 0;
+                System.out.print("Hasta que numero quieres saber los primos: ");
+                numLimit = input.nextInt();
+                System.out.printf("Numeros primos: 1");
+                for (int i = 2; i <= numLimit; i++) {
+                    boolean esPrimo = true;
+                    for (int j = 2; j < i ; j++) {
+                        if (i%j == 0) esPrimo = false;
+                    }
+                    if(esPrimo){
+                        System.out.printf(", %d", i);
+                    }
+                }
                 break;
             case 17:
+                System.out.println("Cuantas potencias de 2: ");
+                int numPot = input.nextInt();
+                for (int i = 0; i <= numPot; i++) {
+                    int potencia = (int)Math.pow(2,i);
+                    System.out.printf("2 elevado a %d = %d\n",i,potencia);
+                }
                 break;
             case 18:
+                System.out.println("Empezamos:");
+                for (int i = 30 ; i <= 60 ; i++) {
+                    System.out.printf("%d\n",i);
+                }
                 break;
             case 19:
+                for (int i = 20 ; i <= 40 ; i++) {
+                    if ( i % 2 != 0){
+                        System.out.println( i );
+                    }
+                }
                 break;
             case 20:
+                /*
+                index=1;
+                while(index<10){
+                    index++;
+                    System.out.println(index);
+                }
+                */
+                for (int index20 = 2; index20 <= 10; index20++) {
+                    System.out.println(index20);
+                }
                 break;
             case 21:
+                String binari = "";
+                char zero = '0',uno = '1';
+                for (int i = 4 ; i <= 9 ; i = i + 2) {
+                    for (int j = 1 ; j < i + 1 ; j++) {
+                        if( j == 1 || j == ( i / 2 ) + 1 ){
+                            System.out.print(zero);
+                        } else {
+                            System.out.print(uno);
+                        }
+                    }
+                    System.out.println();
+                }
+                System.out.println(binari);
                 break;
             case 22:
+                int n22 = 1;
+                do {
+                    System.out.println("Introduce numero:");
+                    n22 = input.nextInt();
+                } while (n22 < 1);
+                float resultado = 1.0F;
+                float fraccion = 0.0F;
+                for (int i = 2; i <= n22; i++) {
+                    fraccion = (float)1/i;
+                    resultado = resultado + fraccion;
+                }
+                System.out.printf("%.5f",resultado);
                 break;
             default:
                 System.out.println("Invalid number dumbass!!!");
