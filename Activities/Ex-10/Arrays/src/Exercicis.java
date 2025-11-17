@@ -137,6 +137,41 @@ public class Exercicis{
                 byte[] byteArray = s01.getBytes();
                 System.out.printf("Length of the byte array: %d\n",byteArray.length);
                 break;
+            case 38,39:
+                int [][] matrixA = new int [2][3];
+                System.out.println(Arrays.toString(matrixA));
+                break;
+            case 40 ,41:
+                int [][][][][] matrixB = new int[10][4][3][5][12];
+                System.out.println(Arrays.toString(matrixB));
+                break;
+            case 42,43:
+                int [][] matrix1 = new int[][]{{1,2,3},{4,5,6}};
+                for (int i = 0; i < 2; i++) {
+                    for (int j = 0; j < 3; j++) {
+                        System.out.printf("%d ",matrix1[i][j]);
+                    }
+                    System.out.println();
+                }
+                System.out.println();
+                int [][] matrix2 = new int[][]{{5,5,8},{3,1,3}};
+                for (int i = 0; i < 2; i++) {
+                    for (int j = 0; j < 3; j++) {
+                        System.out.printf("%d ",matrix2[i][j]);
+                    }
+                    System.out.println();
+                }
+                System.out.println();
+                if(exercici == 42)break;
+                int [][] matrix3 = new int[2][3];
+                for (int i = 0; i < 2; i++) {
+                    for (int j = 0; j < 3; j++) {
+                        matrix3[i][j] = matrix1[i][j] + matrix2[i][j];
+                        System.out.printf("%d ",matrix3[i][j]);
+                    }
+                    System.out.println();
+                }
+                break;
             default:
                 System.out.println("Invalid number dumbaass!!");
         }
