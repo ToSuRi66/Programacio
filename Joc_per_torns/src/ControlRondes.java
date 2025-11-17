@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -33,8 +33,7 @@ public class ControlRondes{
         }
     }
 }
-||||||| empty tree
-=======
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -70,4 +69,3 @@ public class ControlRondes{
         }
     }
 }
->>>>>>> 779673a29f61784d804399f729bf022677c8e633
